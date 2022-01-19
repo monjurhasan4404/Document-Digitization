@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Files</title>
+</head>
+<body>
+
+<h2>Upload</h2>
+  <form method="post" action="upload_doc" enctype="multipart/form-data">
+    {% csrf_token %}
+      <div>
+        <p>Index</p>>
+        <input type="number" placeholder="Index" name="index">
+    </div>
+    <div>
+        <p>Title</p>>
+        <input type="text" placeholder="Title" name="title">
+    </div>
+       <div>
+        <p>Author</p>>
+        <input type="text" placeholder="author" name="author">
+    </div>
+     <div>
+          <p>Expiry Date</p>
+         <input type="datetime-local" placeholder="Expiry Date" name="expiry_date">
+     </div>
+
+     <div>
+         <p>File</p>>
+         <input type="file" multiple name="document">
+     </div>
+      <button type="submit">Upload file</button>
+  </form>
+
+    <p>Uploaded file: <a href="{{ url }}">{{ url }}</a></p>
+
+</body>
+</html>

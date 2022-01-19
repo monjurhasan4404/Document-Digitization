@@ -1,0 +1,174 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Internationnal Bangladesh</title>
+    <link rel="stylesheet" href="{% static 'css/HOME.css' %}">
+
+</head>
+<body>
+        <div class="topnav">
+          <a class="active" href="#home">Home</a>
+
+          <input type="text" placeholder="Search..">
+     </div>
+    <div class="UPside">
+    </div>
+    <div class="leftside" >
+        <div>
+                <h2 class="name"><strong>Document<br>
+                    Digitization</strong></h2>
+        </div>
+
+
+                <h2 class="noti">
+                    <img class ="noti1" src="{%  static 'images/notification.png'  %}">
+                    <strong><a href="Notification.html" style="color: rgb(53, 196, 206)">Notification</a></strong>
+
+                </h2>
+                  <div class="lefttop">
+                        <h3 class="recent">
+                            <img class ="recent1" src="{%  static 'images/recent.png' %}">
+                            <strong><a href="recent" style="color:rgb(7, 7, 7)">Recent</a></strong>
+
+                        </h3>
+                        <h3 class="mydocument">
+                            <img class ="mydocument1" src="{%  static 'images/mydocument.png' %}">
+                            <strong><a href="my_document.html" style= "color:rgb(7, 7, 7)">My Document</a></strong>
+
+                        </h3>
+                        <h3 class="privatefolder">
+                                <img class="privatefolder1 " src="{%  static 'images/private folder.png' %}">
+
+                                <strong><a href="private folder.html" style= "color:rgb(7, 7, 7)">Private Folder</a></strong>
+                         </h3>
+                        <h3 class="publicfolder">
+                                    <img class="publicfolder1 " src="{%  static 'images/public folder.jfif' %}">
+
+                                    <strong><a href="public folder.html"style= "color:rgb(7, 7, 7)">Public Folder</a></strong>
+                        </h3>
+                        <h3 class="tools">
+                            <img class ="tools1" src="{%  static 'images/tools.png' %}">
+                            <strong><a href="tools.html" style="color:rgb(7, 7, 7)">Tools</a></strong>
+
+                        </h3>
+                        <h3 class="trash">
+                            <img class ="trash1" src="{%  static 'images/trash.png' %}">
+                            <strong><a href="trash.html"style="color: rgb(7, 7, 7)">Trash</a></strong>
+
+                        </h3>
+                 </div>
+
+
+
+    </div>
+
+    <div class="Middle">
+
+
+
+            <div class="note" style="color:black" >Welcome To the Document <br/>
+                        Digitization Service Website
+            </div><br/>
+
+
+                <div class="navbar">
+
+                    <img id="accountimage" src="{%  static 'images/account.png' %}" onClick="accountclick()" alt="account">
+                    <script src="{%  static 'js/rightpartclick.js' %}"></script>
+                </div>
+
+
+
+    </div>
+
+    <div id="rightpanel">
+
+        <div class="avatar">
+            <img src="{%  static 'images/account.png' %}" alt="account">
+        </div>
+        <div class="username">
+            <h3>
+                Hi, {{ user.username }}
+            </h3>
+        </div>
+        <div class="profile">
+            <h3>
+                <a href="profile">
+                    Profile
+                </a>
+            </h3>
+        </div>
+        <div class="Edit_profile">
+            <h3>
+                <a href="Edit_profile.html">
+                    Edit Profile
+                </a>
+            </h3>
+        </div>
+        <div class="Upload">
+            <h3>
+                <a href="documents/upload_doc">
+                    Upload File
+                </a>
+            </h3>
+        </div>
+        <div class="Archive_File">
+            <h3>
+                <a href="Archive_File.html">
+                    Archive File
+                </a>
+            </h3>
+        </div>
+
+        <div class="logout">
+            <h3>
+                <a href="login.html">
+                    Log out
+                </a>
+            </h3>
+        </div>
+        <div class="newgroup">
+            <h3>
+                <a href="newgroup.html">
+                    <img src="{%  static 'images/newgroup.png' %}" alt="createnewgroup">
+                        Create New Group
+                </a>
+            </h3>
+        </div>
+        <div class="settings">
+            <h3>
+                <a href="settings.html">
+                    <img src="{%  static 'images/settings.png' %}" alt="settings">
+                        Settings
+                </a>
+            </h3>
+        </div>
+        <div class="help">
+            <h3>
+                <a href="help.html">
+                    <img src="{%  static 'images/help.png' %}" alt="help">
+                        Help and Support
+                </a>
+            </h3>
+        </div>
+    <script src="{%  static 'js/outsideclick.js' %}"></script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
