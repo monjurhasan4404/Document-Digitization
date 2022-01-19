@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+.header1{
+    
+    margin-left: 63%;
+}
+
+.header2{
+    
+    margin-left: 60%;
+    float: right;
+    margin-right: 5%;
+}
+.header3{
+    
+    margin-left: 70%;
+}
+
+#printbutton{
+    margin:2% 2% 0 50%;
+    padding: 10px 20px;
+}
+.mainheader{
+    margin-top: 3%;
+    margin-left: 27%;
+}
+
+.content{
+    
+    margin-left: 2%;
+}
+.ourname{
+    
+    margin-left: 60%;
+    float: right;
+    margin-right: 5%;
+}
+
+.table_of_content{
+    margin-top: none;
+    margin-left: 2%;
+    margin-right: 5%;
+    
+}
+img{
+    height: 600px;
+}
+.ER2{
+   height: 1000PX;
+}
+.MVT2{
+    height: 300PX;
+}
+

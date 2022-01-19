@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= "mainheader">
+        <div class="header1"><h1>Software Requirements Specification</h1>
+        </div>
+        <div class="header2"><h2>for</h2>
+        </div>
+        <div class="header3"><h1>Plan International Bangladesh</h1>
+            <button id="printbutton" onclick="window.print()">Print</button>
+
+        </div>
+
+    </div>
+    <div class="ourname"> <h4>Prepared by</h4><br/>Monjur Hasan<br/>Sadia Afrin Tamanna<br/>Mostak Ahmed<br/></div>
+    <div class="table_of_content">
+        <p><h3><strong>Table of Contents</strong></h3>
+		
+            <strong><a href="#1"><h3>1. Introduction&nbsp;</h3></a></strong>
+            
+               <a href="#1.1"> 1.1 Purpose&nbsp;</a><br />
+               <a href="#1.2"> 1.2 Document Conventions&nbsp;</a><br />
+                <a href ="#1.3">1.3 Intended Audience <br> and Reading Suggestions&nbsp;</a><br />
+                <a href="#1.4">1.4 Product Scope&nbsp;</a><br />
+               <a href="#1.5"> 1.5 References&nbsp;</a><br />
+                <br />
+            
+            <strong><a href="#2">2. Overall Description&nbsp;</strong></a><br />
+            
+               <a href="#2.1"> 2.1 Product Perspective&nbsp;</a><br />
+               <a href="#2.2"> 2.2 Product Functions&nbsp;</a><br />
+                <a href="#2.3">2.3 User Classes and Characteristics&nbsp;</a><br />
+                <a href="#2.4">2.4 Operating Environment&nbsp;</a><br />
+               <a href="#2.5"> 2.5 Design and Implementation Constraints&nbsp;</a><br />
+                <a href="#2.6">2.6 User Documentation&nbsp;</a><br />
+               <a href="#2.7"> 2.7 Assumptions and Dependencies&nbsp;</a><br /><br />
+            
+            <strong><a href="#3">3. External Interface Requirements&nbsp;</a></strong><br />
+            
+                <a href="#3.1">3.1 User Interfaces&nbsp;</a><br />
+                <a href="#3.2">3.2 Hardware Interfaces&nbsp;</a><br />
+               <a href="#3.3"> 3.3 Software Interfaces&nbsp;</a><br />
+               <a href="#3.4">3.4 Communications Interfaces&nbsp;</a><br />
+                <br />
+            
+            <strong><a href="#4">4. System Features&nbsp;</strong></a><br />
+            
+               <a href="#4.1"> 4.1 System Feature 1&nbsp;</a><br />
+                <a href="#4.2"> System Feature 2 &nbsp;</a><br />
+               <a href="#4.3"> 4.3 System Feature 3 &nbsp;</a><br />
+               <a href="#4.4">4.4 System Feature 4 &nbsp;</a><br />
+                <a href="#4.5">4.5 System Feature 5 &nbsp;</a><br />
+                <br />
+            
+            <strong><a href="#5">5. Other Nonfunctional Requirements&nbsp;</a></strong><br />
+            
+                <a href="#5.1">5.1 Performance Requirements&nbsp;</a><br />
+                <a href="#5.2">5.2 Safety Requirements&nbsp;</a><br />
+                <a href="#5.3">5.3 Security Requirements&nbsp;</a><br />
+                <a href ="#5.4">5.4 Software Quality Attributes&nbsp;</a><br />
+                <a href="#5.5">5.5 Business Rules&nbsp;</a><br />
+                <br />
+            
+            <strong><a href="#6">6. Other Requirements&nbsp;</strong></a><br />
+               
+                   <a href="#app_1"><strong> Appendix A: Glossary&nbsp;<br /></a>
+                    <a href="#app_2">Appendix B: To Be Determined List</a></p>
+                    </strong>
+               
+    
+    </div>
+    <div class="content">
+        <br/>
+        <br/>
+        <br/>
+        <h1 id="1">1.Introduction</h1>
+        <h3 id="1.1">1.1 Purpose</h3>
+        <p>The name of our software is document digitization service. Digital system is a system in which we can store,
+            process or communicate any kind of  information in a digital form. Day by day, we are entering a digitalized world,
+            so all the management systems in every sector also need to be digitalized too. For the purpose of 
+               living an easier and better life , everything is being digitized. we need to make a system by which 
+               we can convert the offline records into the digitized version of record keeping. Then the records of 
+               the converted digital document will be stored in a database system of the finance department. 
+               Search and retrieval works can be done by the following system. Three different users will be 
+               there in the system such as public, private, administrators.
+        </p>
+        <h3 id="1.2">1.2 Document Conventions</h3>
+        <p>In our following document, the format we used is IEEE SRS format. 
+            There the main topic will be in bold format and our font size is 30 for the topics,
+             18,20 will be for subsection of the topics. There will be 6 sections of the main
+              topics with prefixes and the sub topics will be like 1.1, 1.2, 1.3. The special names
+               and technical terminologies will be italicized.
+        </p>
+        <h3 id="1.3">1.3 Intended Audience and Reading Suggestions</h3>
+        <p>There are different types of readers that the document is intended for,
+             such as administrators, project managers, developers and the department of finance.
+              There will be 6 sections here and each section will have subsections also.
+               The first section is the introductory part. The second section is all about summary. 
+               Then comes the third section and it's all about the user, software, hardware and communication interfaces.
+                In section four, there is summarization of the whole system features.
+                 All the non-functional requirements are in the fifth section and other requirements are given in section six.
+        </p>
+
+        <h3 id="1.4">1.4 Product Scope </h3>
+        <p>This software will keep all the files or documents in an online secured place so that the official user or public can
+            access the files publicly. Also the official users can get a private workspace there to upload their private files or retrieve
+            their files. Another advantage is this is time consuming because users don’t have to exchange or get their files or 
+            documents through a person, they can easily get their things from this online secured place from anywhere at any time.
+            Bangladesh is now getting digitized day by day. To digitize the whole country, we need to develop the root first.
+            Such as the gov official working things like the departments of the finance sector. If we don’t digitize it then,
+            the vision of digitization of Bangladesh will not work. The goal of this software is mainly keeping the whole 
+            offline system safely in this workplace, so that all the files and documents can be managed easily.
+        </p>
+
+        <h3 id="1.5">1.5 References </h3>
+        <p>
+            1.<a href="http://www.cse.msu.edu/~cse870/IEEEXplore-SRS-template.pdf">Srs template IEEE</a><br/>
+            2.<a href="https://pdf.abbyy.com/learning-center/what-is-ocr/#:~:text=Optical%20Character%20Recognition%2C%20or%20OCR,into%20editable%20and%20searchable%20data.">What is OCR library?</a><br/>
+            3.<a href="https://appsierra.com/basic-framework-meaning/">What is framework?</a><br/>
+            4.<a href="https://www.w3schools.com/css/">Learn about HTML and CSS</a><br/>
+
+            
+        </p>
+
+        <h1 id="2">2. Overall Description</h1>
+        <h3 id="2.1">2.1 Product Perspective </h3>
+        <p> The system was designed to keep records of documents in a digital way.
+            In fact, this system will work to digitize the finance department of an organization.
+            Their document was previously handwritten which will be digitized through this system.
+            This system can be used to digitize the existing document  search, add, delete documents.
+            The system adds new users by administrative way and the users can manage their own documents.
+            This software will consist of web application and mobile application. The web application will work for all the devices and will support in mozilla firefox,
+            chrome, opera etc.The system uses the same database for web application and mobile application and that will integrate the overall user in a single cloud.
+        </p>
+        <h3 id="2.2">2.2 Product function </h3>
+        <p>The users will be able to upload the files and documents through the mobile applications and
+            web applications.The product has different types of functionality.The first functionality is
+            taking input from the users in different types of documents such as PDF,PNG etc.Then the second
+            functionality is to digitize the old data and process the data that will come in the future and
+            keep it together. And keep it in such a way that it can be found by searching. And there will be
+            public and private folders.<br/>
+            <br/>
+
+        </p>
+        <p><strong>The basic things that can be done with this system are:</strong><br/>
+        </p>
+        <div class="points">
+            <p>1. New users can be created.<br/></p>
+            <p>2. The system will take the documents in its required format and the user will be able to upload as much data as possible.<br/></p>
+            <p>3. There will be public and private folders. And the user can lock his folder if he wants.<br/></p>
+            <p>4. User will be able to upload his avatar.<br/></p>
+            <p>5. The files will be found by searching.<br/></p>
+            <p>6.merge the mobile and the web data in a single cloud and that will be helpful for the future.<br/></p>
+
+        </div>
+        <h3 id="2.3">2.3 User classes and characteristics</h3>
+        <p>We have different classes of users in this system. They will be limited to their specific tasks.
+            For example, the administrator will work on how to keep the whole system in good condition and when new users come,
+            they will register through a process. And the job of the users of the finance department is
+            to digitize the documents and oversee them. And the ordinary people who are different will just
+            be able to see the documents. And they will work here one by one as an actor and a class and they
+            will perform their own work.
+        </p>
+
+        <h3 id="2.4">2.4 Operating Environment</h3>
+        <p> Operating system: <br/> 
+            A) Mobile requirements<br/> 
+            Android version: Android 10.0 or later<br/> 
+            Database and APIs: MySql and Rest API.<br/> 
+            Database API level: above 29<br/> 
+            RAM: Minimum 1 GB<br/> 
+            B) Web application requirements: Any configuration of a computer will be applicable, <br/> 
+            any web browser and<br/> 
+            internet connection.<br/> 
+            
+        </p>
+
+        <h3 id="2.5">2.5 Design and Implementation Constraints</h3>
+        <p> In our web application the main constraints are android version and internet connection. 
+            Without internet connection the user and the administrator won’t be able to access the application. 
+            The administrator can't control the application without internet connection. 
+            The user access will also be denied without internet connection. 
+            The android version less than 10.0 will also not be supported by the web application. 
+            All the documents will be saved in a database with security. 
+            Only the administrator will have the access over the whole database and everything.
+             The public data will be shared or accessible for everyone. For security and privacy concerns, 
+             the particular data will be accessed by individual users. 
+
+        </p>
+
+
+
+
+
+        
+        <h3 id="2.6">2.6 User Documentation</h3>
+        <p> on the home page or in any specific place, user’s necessary things, such as tutorials, 
+            queries, or any other help messages will be provided.
+
+        </p>
+
+        <h3 id="2.7">2.7 Assumptions and Dependencies</h3>
+        <p> The mobile application that will run in a mobile should have a good camera.
+             Otherwise, if any user takes a picture that is not clear will create problems
+              in making any document or pdf that includes pictures related information. 
+              The information of that will not be visible enough in the pdf and users will face difficulties.
+
+            No reuse of code should be there from any other sources rather than we will provide the functions.
+           
+
+        </p>
+
+
+        <h1 id="3">3. External Interface Requirements</h1>
+        <h3 id="3.1">3.1 User Interfaces</h3>
+        <p>
+            The user interface is the main interface for the web application. 
+        </p>
+        <div class="Login">
+            <img src="Images/Img1.PNG" alt="Login page">
+        </div>
+
+        <div class="Username">
+            <img src="Images/Img2.PNG" alt="Username">
+        </div>
+
+        <div class="Homepage">
+            <img src="Images/Img3.PNG" alt="Homepage">
+        </div>
+        <p>The first Image is for Login page and the second page is for entering username, then the last page is for homepage.</p>
+        <h3 id="3.2">3.2 Hardware Interfaces </h3>
+        <p> The device that we will connect to application and run, 
+            will need an internet connection with it. In case of a computer,
+             we will need a scanner by which we will scan the documents and upload.
+              For mobile devices, we will basically need a built in camera so that we can scan the documents and upload it.
+               In that case, users will need the access to the camera from that application for using the camera to scan.
+        </p>
+        <h3 id="3.3">3.3 Software Interfaces</h3>
+        <p>Native android development kit will be used to develop the app .
+           The OCR library will be used to understand the characters .
+           To make the app fast and stable, MYSQL database will be used to store the data and
+           sync properly through APIs. A PDF renderer will be implemented that will let the user 
+           open a large file.different web browsers will be used. python and Django will be used .
+        </p>
+        <h3 id="3.4">3.4 Communications Interfaces</h3>
+        <p>This application will be used for scanning the documents.and recognize the documents in a suitable
+            format and upload it to the system. documents will be stored in a cloud  and a single document will
+            be max(5 MB) of size.and that could be happened by the HTTP response.
+        </p>
+        <h1 id="4"> 4. System features</h1>
+        <p>
+            The following system features are important features of our system.
+            Apart from these, there are other small features of our application that
+            are not mentioned in below.
+        </p>
+
+        <h3 id="4.1">4.1 Login</h3>
+        <h4 > 4.1.1: Description and priority
+        
+        </h4>
+        <p>
+            To access the application, users need to login.
+        </p>
+        <p>  Priority: High<br/>
+            1.Benefit- 7<br/>
+            2. Risk-6<br/>
+            3.penalty-5<br/>
+            4.cost-3<br/>
+       </p>
+       
+       <h4>4.1.2:Stimulus/Response Sequences</h4>
+       <p>The following expanded use case shows the response sequences between the actor actions and the system responses.</p>
+        <p>Use Case name: Login.<br/>
+            Actor: finance department user (Admin, Manager, Employees).<br/>
+            Type: Primary.<br/>
+            Overview: Allows users to access the system. 
+        </p>
+        <h5>Typical Course Of actions:</h5>
+        <div class="table-1">
+            <img src="Images/4.1 first table.png" alt="table-1">
+        </div>
+        <h5>Alternate course of actions</h5>
+        <div class="table-2">
+            <img src="Images/4.1 second table.png" alt="table-2">
+        </div>
+        <h4>4.1.3 Funtional Requirements</h4>
+        <div class="table-3">
+            <img id="table" src="Images/4.1 third table.png" alt="table-3">
+        </div>
+
+        <h3 id="4.2">4.2:lock file and folder</h3>
+        <h4>4.2.1:description and priority
+        
+        </h4>
+        <p>
+            Users can lock their files and folders whenever they want.
+        </p>
+        <p>  Priority: Medium<br/>
+            1.Benefit- 9<br/>
+            2. Risk-5<br/>
+            3.penalty-5<br/>
+            4.cost-7<br/>
+       </p>
+       
+       <h4>4.2.2:Stimulus/Response Sequences</h4>
+       <p>The following expanded use case shows the response sequences between the actor actions and the system responses.</p>
+        <p>Use Case name: lock file and folder.<br/>
+            Actor: finance department user (manager, employee).<br/>
+            Type: Secondary.<br/>
+            Overview: Allow the user to lock his/her specific file and folder that would be helpful for the user  in terms of risk. 
+        </p>
+        <p><h3>4.2.3:Typical Course of Actions</h3></p>
+        <div class="action_1">
+            <img src="Images/action 1.PNG" alt="feature.2.action">
+        </div>
+        <h3>Alternate course of actions and Funtional Requirements</h3>
+        <div class="action_2">
+            <img src="Images/action 2.PNG" alt="feature.2.action">
+        </div>
+
+        <h3 id="4.3">4.3 Scan and Upload Documents:</h3>
+        <h4> 4.3.1: Description and priority
+        
+        </h4>
+        <p>
+            To get information, the user will scan an image and upload the documents.
+        </p>
+        <p>  Priority: High<br/>
+            1. Benefit: 9<br/>
+            2. Risk: 7<br/>
+            3. penalty: 5<br/>
+            4. cost: 7<br/>
+       </p>
+       
+       <h4>4.3.2:Stimulus/Response Sequences</h4>
+       <p>The following expanded use case shows the response sequences between the actor actions and the system responses.</p>
+        <p>Use Case name: Scan and Upload Documents.<br/>
+            Actor: finance department user (Managers, Employees).<br/>
+            Type: Primary.<br/>
+            Overview: Allows users to capture images of any document to get information.
+ 
+        </p>
+        <h5>Typical Course Of actions:</h5>
+        <div class="Table-4">
+            <img src="Images/4.3 first table.png" alt="table-4">
+        </div>
+        <h5>Alternate course of actions:</h5>
+        <div class="table-5">
+            <img src="Images/4.3 second table.png" alt="table-5">
+        </div>
+        <h4>4.3.3 Funtional Requirements</h4>
+        <div class="table-6">
+            <img src="Images/4.3 third table.png" alt="table-6">
+        </div>
+
+        <h3 id="4.4">4.4 search the documents</h3>
+        <h4>4.4.1: description and priority:</h4>
+        <p>Users and the general public will be able to find public folder documents.
+            And there will be a search bar for it.
+        </p>
+        <p>Priority: Medium<br/>
+            1. Benefit: 7<br/>
+            2. Risk: 5<br/>
+            3. Cost: 5<br/>
+        </p>
+        <h4>4.4.2 Stimulus/ Response Sequences</h4>
+        <p>The following expanded use case shows the response sequences between the actor actions and the system responses.
+            <br/>
+        </p>
+        <p>Use Case Name: Search  documents<br/>
+            Actor: department of finance(manager,employee)general users.<br/>
+            Type: secondary.<br/>
+            Overview: If the user wishes, he can search and find the documents as per his need. And for that user have to use different types of keywords.
+            That function consumes the time for retrieving any documents.<br/>
+            
+        </p>
+        <p><h3>4.4.3:Typical Course of Actions</h3></p>
+        <div class="action_1">
+            <img src="Images/action 3.PNG" alt="feature.4.action">
+        </div>
+        <h3>Alternate course of actions and Funtional Requirements</h3>
+        <div class="action_2">
+            <img src="Images/action 4.PNG" alt="feature.4.action">
+        </div>
+
+
+
+        <br/>
+        <h3 id="4.5">4.5 Trash/ bin</h3>
+        <h4>4.5.1: Description and priority</h4>
+        <p>User needs this function to restore the deleted data.
+        </p>
+        <p>Priority: Medium<br/>
+            1. Benefit: 6<br/>
+            2. Risk: 3<br/>
+            3. Cost: 6<br/>
+            4. Penalty: 5<br/>
+        </p>
+        <h4>4.5.2 Stimulus/ Response Sequences</h4>
+        <p>The following expanded use case shows the response sequences between the actor actions and the system responses.
+            <br/>
+        </p>
+        <p>Use Case Name:  Trash/ bin
+            Actor: User of finance department (Manager, Employees).<br/>
+            Type: secondary.<br/>
+            Overview:When a user deletes a document it comes in the trash/ bin and stays there for a 15 days period.
+             If the user needs the deleted file to be restored, he can restore that from this trash. 
+             After 15 days the deleted file will be automatically deleted from the system.
+            
+            
+        </p>
+        <p><h4>4.5.3 Typical Course of Actions </h4></p>
+        <div class="activity_1">
+            <img src="Images/4.5.1.png" alt="feature.5.action">
+        </div>
+            <h4>Alternate Course Of Actions</h4>
+        <div class="activity_2">
+            <img src="Images/4.5.2.png" alt="feature.5.action">
+            
+        </div>
+        <br/>
+        <h4>Funtional Requirements</h4>
+        <div class="activity_3">
+            <img src="Images/4.5.3.png" alt="feature.5.action">
+        </div>
+     
+
+
+        <h1 id="5">5. Other Non-Functional Requirements</h1>
+        <h3 id="5.1">5.1 Performance Requirements</h3>
+        <p>
+            
+
+           There are some performance requirements like no page will take more than 2 seconds to access for one user.
+            If there are any 3 failed login attempts, the  account should be blocked. 
+            Then. the assigned administrator who uses the administration panel will allow you to reset the password.
+             For no functional change in the system for maximum 15 minutes, the system will get automatically logged out. 
+             The system will have to have the advanced system of recognizing the optical character recognition (ocr) of the
+              documents which are going to be scanned.
+ 
+        </p>
+
+        <h3 id="5.2"> 5.2 Safety Requirements</h3>
+        <p>
+            The system should be capable of Google Login or Active Directory as login authentication,
+             so that, if the username is forgotten or any type of login problem for missing data or
+              the device is damaged, then it will save data in google cloud.
+        </p>
+
+        <h3 id="5.3">5.3 Security Requirements</h3>
+        <ol>
+            <li>The accounts have to have only alpha and numeric keys, that are allowed in the username and password field.</li>
+            
+            <li>The data of the database will never be transmitted to unauthenticated sources.</li>
+            <li>The system will never reveal administrator information that is authorized to the users.</li>  
+            <li>At the rest, the database must be encrypted.</li>
+        </ol>
+
+        <h3 id="5.4"> 5.4 Software Quality Attributes </h3>
+        <p>
+           <strong>Adaptability:</strong>Users can understand the functions easily as the database is normalized. <br>
+           <strong>Availability:</strong>The web applications will be available for 24/7 hours as the system will be hosted in cloud servers.
+           <br>
+           <strong>Correctness:</strong>The system will receive the appropriate information from the original documents
+            and then will use Google’s API for providing accurate information. <br>
+           <strong>Flexibility:</strong>There is flexibility to find the data by searching index, date, file name etc.
+           <br>
+           <strong>Reliability:</strong>Users can use dashboard to streamline authentication, asset protection and operational control. <br>
+           <strong>Portability:</strong>The server will support in Linux, Windows, Mac and for Mobile devices : Android 10 or later.
+           <br>
+           <strong>Testability:</strong> It's a property that measures a piece of code or functionality to test.
+            It's a testing of basic functions properly works or not like, creating folders, scanning and uploading documents etc.
+           <br>
+           <strong>Usability:</strong> Only the officials of the department of finance can login to the system.
+           <br>
+
+
+        <h3 id="5.5">5.5 Business Rules</h3>
+        <ol>
+            <li>The users can login to the system only when he/she is a member of the department of finance
+                 and have completed the application form given by the Administrator.</li>
+            <li>The administrator has the power of ensuring valid information and 
+                access to the information of employees including their shared or uploaded data.
+                 He also can remove the user id.</li>
+            <li>The member who is given power can control all the employees information and their shared or uploaded documents.
+            </li>
+            <li>The member of the department of finance can login the system by using specific rules and can digitize data.
+            </li>
+        </ol>
+
+
+        </p>        
+                    
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h2 id="6">Appendix</h2>
+        <h4 id="app_1">Appendix A: Glossary</h4>
+        <table >
+            <tr>
+              <th>Term</th>
+              <th>Description</th>
+              
+            </tr>
+            <tr>
+              <td>1.SRS</td>
+              <td>Software Requirement specification.</td>
+              
+            </tr>
+            <tr>
+              <td>2.OCR</td>
+              <td>Optical Character Recognition.</td>
+
+             
+            </tr>
+            <tr>
+                <td>3.Administrator</td>
+                <td> The vendor who will purchase this ecommerce website for their business and maintain the site. </td>
+                
+            </tr>
+            <tr>
+                <td>4.Website Wireframe	</td>
+                <td> A visual guide that represents the framework of a website.   </td>
+                
+            </tr>
+            <tr>
+                <td>5.HTML</td>
+                <td> (Hypertext Markup Language)Standard markup language for creating web pages and web applications   </td>
+                
+            </tr>
+            <tr>
+                <td>6.API</td>
+                <td> Application Programming Interface.   </td>
+                
+            </tr>
+            <tr>
+                <td>7.Operating System </td>
+                <td> The software program of a computer or mobile devices that manages the
+                     hardware and software of the device to run this website.
+               </td>
+                
+            </tr>
+            <tr>
+                <td>8.Hardware Platform</td>
+                <td>The set of compatible hardware that will enable this service to run on the device.</td>
+            </tr>
+            </tr>
+                <td>9.WAN-LAN	</td>
+                <td> (Wide Area Network and Local Area Network) Computer networks that interconnect
+                     computers over a large area and limited area respectively.   </td>
+                
+            </tr>
+            <tr>
+                <td> 10.Server	   </td>
+                <td> A program that processes requests and delivers data to another electronic device (computer or mobile device)
+                     over the internet or a local network.   
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td>11.Dizitization</td>
+                <td> Digitization is the process of converting information into a digital (i.e. computer-​readable) format   </td>
+                
+            </tr>
+            
+            <tr>
+                <td>12.Search</td>
+                <td> Typing single search items or typing item list (multiple searches at a time) for search in the search menu.   </td>
+                
+            </tr>
+            
+          </table>
+
+
+
+        
+
+    </div>
+</body>
+</html>

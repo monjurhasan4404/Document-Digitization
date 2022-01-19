@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+.header1{
+    
+    margin-left: 70%;
+}
+
+.header2{
+    
+    margin-left: 60%;
+    float: right;
+    margin-right: 5%;
+}
+.header3{
+    
+    margin-left: 70%;
+}
+.content{
+    
+    margin-left: 2%;
+}
+.table{
+    margin-left: 2%;
+}
+.points{
+    margin-left:5%;
+}
+.Login{
+    overflow: hidden;
+    float: left;
+}
+.Username{
+    overflow: hidden;
+    float: left;
+}
+
+.Homepage{
+    overflow: hidden;
+    
+}
+#printbutton{
+    margin:2% 2% 0 50%;
+    padding: 10px 20px;
+}
+img{
+    height: 400px;
+}
+.action{
+    height: 300px;
+}
+.table_of_content{
+    margin-top: none;
+    margin-left: 2%;
+    margin-right: 5%;
+   
+    
+    
+}
+.content{
+    margin-top: 3%;
+    margin-left: 2%;
+   
+}
+.mainheader{
+    margin-top: 3%;
+    margin-left: 27%;
+}
+#table{
+    height: 250px;
+    width: 650px;
+}
+
+table{
+    border: 1px solid black;
+    width: 95%;
+}
+th,td{
+    border: 1px solid black;
+    width: 50%;
+}
+.ourname{
+    
+    margin-left: 60%;
+    float: right;
+    margin-right: 5%;
+}

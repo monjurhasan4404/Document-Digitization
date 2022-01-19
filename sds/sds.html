@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class= "mainheader">
+        <div class="header1"><h1>Software Design Specification</h1>
+        </div>
+        <div class="header2"><h2>for</h2>
+        </div>
+        <div class="header3"><h1>Document Digitization Service</h1>
+            <button id="printbutton" onclick="window.print()">Print</button>
+
+        </div>
+    </div>
+
+
+    <div class="ourname"> <h4>Prepared by</h4><br/>Monjur Hasan<br/>Sadia Afrin Tamanna<br/>Mostak Ahmed<br/></div>
+    <div class="table_of_content">
+        <p><h3><strong>Table of Contents</strong></h3>
+		
+            <strong><a href="#1"><h3>1. Introduction&nbsp;</h3></a></strong>
+            
+               <a href="#1.1"> 1.1 Purpose&nbsp;</a><br />
+               <a href="#1.2"> 1.2 Document Conventions&nbsp;</a><br />
+                <a href ="#1.3">1.3 Intended Audience <br> and Reading Suggestions&nbsp;</a><br />
+                
+            
+            <strong><a href="#2">2. Description of Design Components&nbsp;</strong></a><br />
+            
+               
+            
+            <strong><a href="#3">3. High-Level Component Design&nbsp;</a></strong><br />
+            
+                
+            
+            <strong><a href="#4">4. Class diagrams&nbsp;</strong></a><br />
+            
+               
+            
+            <strong><a href="#5">5. Sequence Diagrams&nbsp;</a></strong><br />
+            
+                
+            
+            <strong><a href="#6">6. Database Design&nbsp;</strong></a><br />
+
+
+            <strong><a href="#7">7. Implementation plan&nbsp;</strong></a><br />
+               
+                   
+               
+    
+    </div>
+
+    <div class="content">
+        <h1 id="1">1.Introduction</h1>
+        <h3 id="1.1">1.1 Purpose Of The Document</h3>
+        <p>
+            The purpose of software design specification (SDS) is outlining the software
+            architecture and design of “Document Digitization Service”. This design document
+            describes all the data, architectural, interface and component level design for
+            “Document Digitization Service”. In addition the document provides various views
+            of the system for ease of communication and understanding with the system
+
+        </p>
+
+        <h3 id="1.2">1.2 Document Conventions</h3>
+        <p>
+            In our following document, the general SDS format will be used. 
+            There the main topic will be in bold format and our font size is 30 for the topics, 
+            20 will be for subsection of the topics. There will be 7 sections of the main topics
+            with prefixes and the sub topics will be like 1.1, 1.2, 1.3. The special names and
+            technical terminologies will be bold. 
+
+        </p>
+
+        <h3 id="1.3">1.3 Intended Audience and Reading Suggestions</h3>
+        <p>
+            This document is mainly for the project managers and developers. 
+            Actually this software design specification (SDS) is intended to
+            be used as a guideline for all development requirements of its 
+            creators. The document contains a number of diagrams and technical 
+            terminologies, so that readers are instructed to have pre-established
+            knowledge of the topics covered. 
+
+        </p>
+        <h1 id="2">2. Description of Design Components</h1>
+        <h2>Server-Side:</h2>
+        <p>
+            <strong>Backup system:</strong>If any data is deleted or removed unexpectedly,
+             this system will backup the data. Basically, this system will archive the data.
+
+        </p>
+        <p>
+            <strong>Security-System:</strong>Using this system, folders or files can be locked if needed.
+        </p>
+        <p>
+            <strong>Maintenance and Technical Support:</strong>The system should have better maintenance and technical support policy.
+
+        </p>
+        <p>
+            <strong>Capabilities:</strong>The system must be capable of scanning and uploading 35,00,000 pages by using this software.
+
+        </p>
+        <p>
+            <strong>Notification management:</strong>To manage the system properly, 
+            there should be a notification system that the system notify the user about the updates, edits or other changes.
+        </p>
+        <p>
+            <strong>Report management:</strong>The server should have to handle the reports as it's required.
+        </p>
+        <p>
+            <strong>Search and retrieval management:</strong>The server should have to handle the search engine properly.
+
+        </p>
+        <H2>Client Side:</H2>
+        <p>By this the client should be able to visit through different platforms like web and android.
+            but whenever the client visits they see the same things and same functionalities.
+        </p>
+        <p><strong>1.Login:</strong></p>
+        <p>At first the Actor sees the login page.where they have to put their username and password .if the information matches with the database then see her own dashboard.if actor has not been registered yet.
+            the registration page will appear.And the actor can also log in through Google.
+        </p>
+        <div class="log">
+            <img CLASS="log2" src="Images/img2.png" alt="log">
+        </div>
+        <p><strong>2.Registration:</strong></p>
+        <p>The registration of a user can only be done by the administrator.</p>
+        <div class="reg">
+            <img CLASS="reg2" src="Images/img1.png" alt="reg">
+        </div>
+
+
+        <h1 id="2.1">2.1 Architectural Design</h1>
+        <p>
+            We will use model view template (MVT) software design architecture for both mobile and web applications for
+             “document Digitization Service”. It is a collection of three important components Model ,View and Template. The Model helps to handle database. 
+             The entire design is broken into three components: <br/>
+        </p>
+        <p><strong>Model:</strong> Model acts as an interface for our data and is basically the logical structure behind
+             the entire web application which is represented by a database here we will be using MySql.
+        </p>
+        <p><strong>View:</strong> View executes the business logic and interacts with the Model and renders the template.
+             It accepts HTTP requests and then returns HTTP responses.
+        </p>
+        <p><strong>Templates:</strong> Templates are used to specify a structure for an output. Data can be populated in a template using placeholders. It defines how the data is presented.
+             An example is a Generic list view that we can use to display a set of records from the database.
+            
+        </p>
+        <p>advantages of using MVT:<br/>
+            1.Less coupled.<br/>
+            2. Suitable for small to large-scale applications.<br/>
+            3.Easy to Modify.<br/>
+        </p>
+        <h3>MVT Architecture:</h3>
+        <div class="MVT">
+            <img CLASS="MVT2" src="Images/MVT.png" alt="ARCHITECTURAL DESIGN">
+        </div>
+        
+        <h1 id="3">3. High-Level Component Design:</h1>
+        <div class="high">
+            <img src="Images/higher_level_component.png" alt="higher level component">
+        </div>
+        <h1 id="4">4.Class Diagram:</h1>
+        
+        <h3>Detailed Class Diagram:</h3>
+        <div class="cd">
+           
+            <img src="Images/Class diagram.png" alt="class diagram">
+
+        </div>
+
+        <h3 id="4.1">4.1. Class Description: </h3>
+
+        <div class="cd">
+           
+            <img src="Images/4.1.1.png" alt="4.1.1">
+
+        </div>
+
+        <div class="cd">
+           
+            <img src="Images/4.1.2.png" alt="4.1.2">
+
+        </div>
+
+        <div class="cd">
+           
+            <img src="Images/4.1.4.png" alt="4.1.4">
+
+        </div>
+
+        <div class="cd">
+           
+            <img src="Images/4.1.5.png" alt="4.1.5">
+
+        </div>
+
+        <div class="cd">
+           
+            <img src="Images/4.1.6.png" alt="4.1.6">
+
+        </div>
+
+        <div class="cd">
+           
+            <img src="Images/4.2.1.png" alt="4.2.1">
+
+        </div>
+        <div class="cd">
+           
+            <img src="Images/4.2.2.png" alt="4.2.2">
+
+        </div>
+        <div class="cd">
+           
+            <img src="Images/4.2.3.png" alt="4.2.3">
+
+        </div>
+        <div class="cd">
+           
+            <img src="Images/4.2.4.png" alt="4.2.4">
+
+        </div>
+        <div class="cd">
+           
+            <img src="Images/4.2.5.png" alt="4.2.5">
+
+        </div>
+        <div class="cd">
+           
+            <img src="Images/4.2.6.png" alt="4.2.6">
+
+        </div>
+        <div class="cd">
+           
+            <img src="Images/4.2.7.png" alt="4.2.7">
+
+        </div>
+        
+
+
+
+        <h1 id="5">5.Sequence Diagram:</h1>
+        <div class="sd1">
+            <p>
+                <strong>Use case: Login</strong>
+            </p>
+            <img src="Images/login.png" alt="Login">
+
+        </div>
+        <div class="sd2">
+            <p>
+                <strong>Use case: Scan and Upload</strong>
+            </p>
+            <img src="Images/scan nd upload.png" alt="scan nd upload">
+        </div>
+
+        <div class="sd3">
+            <p>
+                <strong>Use case: Search</strong>
+            </p>
+            <img src="Images/search.png" alt="search">
+        </div>
+        <h1 id="6">6.Database Design </h1>
+        <h3>ER Diagram</h3>
+        <div class="ER">
+            
+            <img class="ER2" src="Images/ER.png" alt="ER DIAGRAM ">
+        </div>
+
+
+
+        <h1 id="7">7.Implementation plan:</h1>
+        <p>
+            For the implementation, we will design the classes and database according to our diagrams.
+             For both the web application (Monjur Hasan will work on it) and mobile application 
+             (Mostak Ahamed will work on it). Firstly we will design the user authentication and UI designs
+             .Then we will work on our database and connect the database to both web application and mobile
+              application. If we get enough time at the end of the work, we will work on the UI a bit more 
+              (Sadia Afrin Tamanna will work on it). 
+
+        </p>
+
+     
+
+        
+
+
+    
+</body>
+</html>
